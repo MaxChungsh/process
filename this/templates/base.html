@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Greetings!/ {{ current_title }}</title>
-        <h1> {{ current_title }} </h1>
-    </head>
-    <body>
-        <h2>{{ current_title }}</h2>
-        <hr>
-        <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-        </ul>
-
-        {% block main %}
-        {% endblock main %}
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Cvgrk-77-L8VIKaQim-_JoLAQhYom8r9jaXy32pOom4" />
+    <title>Greetings! / {{ current_title }}</title>
+    <style>
+        body {
+            padding-left: 20px; /* Ensures all content is aligned */
+            padding-right: 20px; /* Optional: for symmetry */
+        }
+        h1 {
+            margin-top: 50px; /* Adjusts the vertical position */
+            margin-bottom: 10px; /* Adds space below the heading */
+        }
+        h2 {
+            margin-top: 20px; /* Space above h2 */
+            margin-bottom: 20px; /* Space below h2 */
+        }
+        .button-container {
+            display: flex; /* Use flexbox for spacing */
+            justify-content: space-between; /* Evenly space buttons */
+            margin: 20px 0; /* Margin above and below the buttons */
+        }
+        .button {
+            flex: 1; /* Allow buttons to grow equally */
+            margin: 0 10px; /* Space between buttons */
+            text-align: center; /* Center text within buttons */
+        }
+        .button a {
+            display: inline-block; /* Make the link block-level */
+            padding: 10px 20px; /* Padding for buttons */
+            background-color: #007bff; /* Button background color */
+            color: white; /* Button text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+        }
+        ul {
+            padding-left: 0; /* Removes default padding from the list */
+            list-style-type: none; /* Removes bullet points */
+            display: flex; /* Makes the list horizontal */
+            gap: 20px; /* Adds space between the links */
+        }
+        li {
+            /* No additional styles needed for li here */
+        }
+    </style>
+</head>
+<body>
+    <h1>Max Chung</h1>
+    <h2>{{ current_title }}</h2>
+    <hr>
+    <div class="button-container">
+        <div class="button">
+            <a href="{{ url_for('index') }}">Home</a>
+        </div>
+        <div class="button">
+            <a href="{{ url_for('about') }}">Further more</a>
+        </div>
+        <div class="button">
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </div>
+    <hr>
+    {% block main %}
+    {% endblock %}
+</body>
 </html>

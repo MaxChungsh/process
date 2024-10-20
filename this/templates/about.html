@@ -3,15 +3,6 @@
 {% block main %}
     <h1>About</h1>
     <p>Welcome to the about page!</p>
-    <form action="/about" method = "post">
-        {{ form.csrf_token() }}
-        {{ form.title.label }}
-        {{ form.title }}
-        {{ form.submit }}
-    </form>
-
-    {% if title %}
-        <h2>{{ title }}</h2>
-    {% endif %}
+    
     
 {% endblock %}

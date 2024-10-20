@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xml-style.xslt"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://mcmchung.myqnapcloud.com:5000/index</loc>
+    </url>
+    <url>
+        <loc>http://mcmchung.myqnapcloud.com:5000/about</loc>
+    </url>
+    <url>
+        <loc>http://mcmchung.myqnapcloud.com:5000/contact</loc>
+    </url>
+    <url>
+        <loc>https://www.linkedin.com/in/max-chungsh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</loc>
+    </url>
+    <url>
+        <loc>https://www.instagram.com/maxchung_00_x/profilecard/?igsh=MWVpNGc4MGFvdWR0OA==</loc>
+    </url>
+    <url>
+        <loc>http://mcmchung.myqnapcloud.com:5000/</loc>
+</urlset>
