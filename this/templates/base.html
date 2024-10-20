@@ -36,6 +36,13 @@
             text-decoration: none; /* Remove underline */
             border-radius: 5px; /* Rounded corners */
         }
+        .separator {
+            height: 40px; /* Thickness of the separator */
+            background-color: #81b3e9a8; /* Color of the separator */
+            margin: 20px 0; /* Space above and below the separator */
+            margin-left: -20px; /* Adjust the left margin to touch the edge */
+            margin-right: -20px;
+        }
         ul {
             padding-left: 0; /* Removes default padding from the list */
             list-style-type: none; /* Removes bullet points */
@@ -62,7 +69,7 @@
             <a href="{{ url_for('contact') }}">Contact</a>
         </div>
     </div>
-    <hr>
+    <div class="separator"></div> <!-- Thick colored separator -->
     {% block main %}
     {% endblock %}
 </body>
