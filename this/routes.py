@@ -1,5 +1,5 @@
 from app import app
-from flask import render_template
+from flask import render_template, send_from_directory
 
 import forms
 
@@ -23,3 +23,5 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template('contact.html', current_title='Contact')
+
+
