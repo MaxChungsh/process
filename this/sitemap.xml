@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/assets/xml-style.xslt"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://mcmchung.myqnapcloud.com:5000/index</loc>
+        <loc>http://mcmchung.myqnapcloud.com:5000/home</loc>
     </url>
     <url>
         <loc>http://mcmchung.myqnapcloud.com:5000/about</loc>
@@ -17,5 +17,5 @@
         <loc>https://www.instagram.com/maxchung_00_x/profilecard/?igsh=MWVpNGc4MGFvdWR0OA==</loc>
     </url>
     <url>
-        <loc>http://mcmchung.myqnapcloud.com:5000/</loc>
+        <loc>https://github.com/MaxChungsh</loc>
 </urlset>
