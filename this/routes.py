@@ -1,8 +1,6 @@
 from app import app
 from flask import render_template, send_from_directory
 
-import forms
-
 @app.route('/')
 @app.route('/index')
 def index():
@@ -23,3 +21,11 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template('contact.html', current_title='Contact')
+
+@app.route('/Liebesleid')
+def lesbesleid():  # Changed to lowercase for consistency
+    return send_from_directory('static', 'music/Liebesleid.mp3')
+
+@app.route('/IchimaruGin')
+def ichimaru_gin():  # Changed to lowercase for consistency
+    return send_from_directory('static', 'images/IchimaruGin.jpg')
