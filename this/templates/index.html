@@ -9,45 +9,70 @@
     </div>
 </div>
 
-<div class="education" style="width: 70%;">
-    <h2>EDUCATION</h2>
-    <h3>The University of Hong Kong</h3>
-    <p>Bachelor of Arts and Science in Applied Artificial Intelligence</p>
-    <p>CGPA: 3.15/4.30</p>
-    <li>Relevant Course: Python, C/C++, Probability & Statistics, Linear Algebra</li>
-    <p>Sep 2023 - Aug 2027 (Expected)</p>
-    <h3>King's College, Hong Kong</h3>
-    <p>Hong Kong Diploma of Secondary Education</p>
-    <p>Sep 2017 - May 2023</p>
+<div class="collapsible-section" style="width: 70%; margin: 0;">
+    <button class="collapsible" style="font-size: 1.2em; padding: 8px; width: 100%;">EDUCATION</button>
+    <div class="content" style="display: none; padding: 10px; border: 1px solid #ccc;">
+        <h3>The University of Hong Kong</h3>
+        <p>Bachelor of Arts and Science in Applied Artificial Intelligence</p>
+        <p>CGPA: 3.15/4.30</p>
+        <li>Relevant Course: Python, C/C++, Probability & Statistics, Linear Algebra</li>
+        <p>Sep 2023 - Aug 2027 (Expected)</p>
+        <h3>King's College, Hong Kong</h3>
+        <p>Hong Kong Diploma of Secondary Education</p>
+        <p>Sep 2017 - May 2023</p>
+    </div>
 </div>
 <hr style="border: none; border-top: 2px solid gray; margin: 20px 0; width: 70%;">
 
-<div class="work-experience" style="width: 70%;">
-    <h2>WORK EXPERIENCE</h2>
-    <h3>Teaching Assistant, Wing Sir & His Team, Hong Kong</h3>
-    <p>May 2024 - Present</p>
-    <li>Delivered actionable feedback to over 100 students, refining their critical thinking skills and enhancing their logical deduction abilities through personalized coaching</li>
+<div class="collapsible-section" style="width: 70%; margin: 0;">
+    <button class="collapsible" style="font-size: 1.2em; padding: 8px; width: 100%;">WORK EXPERIENCE</button>
+    <div class="content" style="display: none; padding: 10px; border: 1px solid #ccc;">
+        <h3>Teaching Assistant, Wing Sir & His Team, Hong Kong</h3>
+        <p>May 2024 - Present</p>
+        <li>Delivered actionable feedback to over 100 students, refining their critical thinking skills and enhancing their logical deduction abilities through personalized coaching</li>
+    </div>
 </div>
 <hr style="border: none; border-top: 2px solid gray; margin: 20px 0; width: 70%;">
 
-<div class="projects" style="width: 70%;">
-    <h2>PROJECT EXPERIENCE</h2>
-    <h3>Forecasting Stock Price Movements Using Time Series Analysis</h3>
-    <p>Jun 2024</p>
-    <li>Developed Python and Excel VBA codes to automatically predict the stock price of a listed company in the coming year under a time series analysis approach</li>
-    <h3>Stock Market Simulator</h3>
-    <p>Apr 2024</p>
-    <li>Contributed to the design of the algorithm for modeling and projecting the performance of different stocks</li>
-    <li>Implemented randomization for company names and the occurrences of different generated events</li>
-    <h3>Sentiment Analysis of X posts during the pandemic</h3>
-    <p>Mar 2024</p>
-    <li>Automated the cleaning and standardization of large-scale datasets (over millions of X posts) in 2023 to analyze sentiment changes among X users regarding the COVID-19 pandemic across different time intervals and festivals</li>
+<div class="collapsible-section" style="width: 70%; margin: 0;">
+    <button class="collapsible" style="font-size: 1.2em; padding: 8px; width: 100%;">PROJECT EXPERIENCE</button>
+    <div class="content" style="display: none; padding: 10px; border: 1px solid #ccc;">
+        <h3>Forecasting Stock Price Movements Using Time Series Analysis</h3>
+        <p>Jun 2024</p>
+        <li>Developed Python and Excel VBA codes to automatically predict the stock price of a listed company in the coming year under a time series analysis approach</li>
+        <h3>Stock Market Simulator</h3>
+        <p>Apr 2024</p>
+        <li>Contributed to the design of the algorithm for modeling and projecting the performance of different stocks</li>
+        <li>Implemented randomization for company names and the occurrences of different generated events</li>
+        <h3>Sentiment Analysis of X posts during the pandemic</h3>
+        <p>Mar 2024</p>
+        <li>Automated the cleaning and standardization of large-scale datasets (over millions of X posts) in 2023 to analyze sentiment changes among X users regarding the COVID-19 pandemic across different time intervals and festivals</li>
+    </div>
 </div>
 <hr style="border: none; border-top: 2px solid gray; margin: 20px 0; width: 70%;">
-<div class="additional-info" style="width: 70%;">
-    <h2>ADDITIONAL INFORMATION</h2>
-    <li>Programming Languages: Python, C/C++, Java</li>
-    <li>Languages: Cantonese (Native), English (Fluent), Mandarin (Fluent)</li>
+
+<div class="collapsible-section" style="width: 70%; margin: 0;">
+    <button class="collapsible" style="font-size: 1.2em; padding: 8px; width: 100%;">ADDITIONAL INFORMATION</button>
+    <div class="content" style="display: none; padding: 10px; border: 1px solid #ccc;">
+        <li>Programming Languages: Python, C/C++, Java</li>
+        <li>Languages: Cantonese (Native), English (Fluent), Mandarin (Fluent)</li>
+    </div>
 </div>
 <hr style="border: none; border-top: 2px solid gray; margin: 20px 0; width: 70%;">
+
+<script>
+    // JavaScript for collapsible sections
+    const coll = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 {% endblock %}
